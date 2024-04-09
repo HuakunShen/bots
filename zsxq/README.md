@@ -8,7 +8,7 @@
    2. 替换m3u8文件里的key, `ali_mts_key`
 3. m3u8文件里的ts文件链接替换成完整链接，prefix with domain `https://videos.zsxq.com/`
 4. 用ffmpeg下载
-   1. ffmpeg -protocol_whitelist file,https,tcp,crypto,data,tls -allowed_extensions ALL -i <m3u8-filename> -c copy -bsf:a aac_adtstoasc output.mp4
+   1. `ffmpeg -protocol_whitelist file,https,tcp,crypto,data,tls -allowed_extensions ALL -i <m3u8-filename> -c copy -bsf:a aac_adtstoasc output.mp4`
 
 ## 自动
 
